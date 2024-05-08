@@ -39,10 +39,17 @@ end
 
 def isogram?(string)
   original_length = string.length
-  string_array = string.downcase.split
+  p "Original length: #{original_length}"
+  
+  string_array = string.downcase.chars
+  p "String array: #{string_array}"
+  
   unique_length = string_array.uniq.length
+  p "Unique length: #{unique_length}"
+  
   original_length == unique_length
 end
+
 
 # Can you guess what's next?
 # That's right! The final exercise from the lesson, which we'll debug with pry-byebug
