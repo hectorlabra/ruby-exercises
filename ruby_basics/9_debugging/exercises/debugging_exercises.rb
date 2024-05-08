@@ -1,3 +1,5 @@
+
+
 # First, we're going to practice reading the Stack Trace
 # Don't look at this method prior to running the test
 # Type 'rspec' into the terminal to run Rspec
@@ -59,7 +61,8 @@ end
 # Once you find the error, fix it and get the test to pass
 
 def yell_greeting(string)
-  name = string
-  name = name.downcase
-  greeting = "WASSAP, #{name}!"
+  string.upcase!
+  greeting = "WASSAP, #{string}!"
 end
+
+
